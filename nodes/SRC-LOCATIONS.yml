@@ -1,0 +1,130 @@
+fileVersion: 1
+id: 6210603b-fa47-49e6-809e-be21586ac6de
+name: LOCATIONS
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 475ffa7e-8c59-456a-a5e6-ec871ab6cb20
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: L_USER_ID
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ccfaa92-bf0a-45d0-bfdc-2edf9f0b4248
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: L_STREET_ADDRESS
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: fdefcda2-49ea-4f4e-8aa3-d9cf70c7b104
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: L_STATE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 7a6b1a6d-2cba-4aa2-8285-2d9f137caca7
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: L_COUNTRY
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0ae11d58-41c8-4b98-94cd-e81d911b0cb9
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: VARCHAR(16777216)
+        defaultValue: ""
+        description: ""
+        name: L_ZIP_CODE
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9cbc4e0a-9fdf-4f4c-9252-45ce685a59c9
+          stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+        config: {}
+        dataType: NUMBER(38,0)
+        defaultValue: ""
+        description: ""
+        name: _SLING_LOADED_AT
+        nullable: true
+        primaryKey: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+        uniqueKey: false
+  name: LOCATIONS
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

@@ -1,0 +1,124 @@
+fileVersion: 1
+id: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+name: STG_LOCATIONS
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b8fdea28-2ff8-4023-a9d6-0ec73e7ce1d3
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: USER_ID
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 475ffa7e-8c59-456a-a5e6-ec871ab6cb20
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 067513ae-3605-4a67-9356-8774d8be4d1f
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STREET_ADDRESS
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ccfaa92-bf0a-45d0-bfdc-2edf9f0b4248
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2787b53e-60cb-489c-8cff-1fb853378589
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: STATE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: fdefcda2-49ea-4f4e-8aa3-d9cf70c7b104
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5edce6f6-f624-46bf-bd48-bbe48809040a
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: COUNTRY
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 7a6b1a6d-2cba-4aa2-8285-2d9f137caca7
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4b0ace46-8107-42c7-842d-bc435402a3c1
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: VARCHAR(16777216)
+        description: ""
+        name: ZIP_CODE
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 0ae11d58-41c8-4b98-94cd-e81d911b0cb9
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d1805119-c295-4cb3-a5e8-0eac16e1b573
+          stepCounter: 5403b3b5-ebb5-43c8-a82b-1c8ce1e0a831
+        config: {}
+        dataType: NUMBER(38,0)
+        description: ""
+        name: _SLING_LOADED_AT
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 9cbc4e0a-9fdf-4f4c-9252-45ce685a59c9
+                stepCounter: 6210603b-fa47-49e6-809e-be21586ac6de
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          LOCATIONS: 6210603b-fa47-49e6-809e-be21586ac6de
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: LOCATIONS
+        join:
+          joinCondition: FROM {{ ref('SRC', 'LOCATIONS') }} "LOCATIONS"
+        name: STG_LOCATIONS
+        noLinkRefs: []
+  name: STG_LOCATIONS
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
